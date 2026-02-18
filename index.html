@@ -1,0 +1,408 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TurnX is a premium digital marketing agency founded by Gokula Priya in 2023, delivering SEO, performance ads, social media management, and branding strategy."
+    />
+    <meta
+      name="keywords"
+      content="TurnX, digital marketing agency, SEO optimization, Google Ads, Meta Ads, social media management, branding strategy, performance marketing"
+    />
+    <meta name="author" content="TurnX" />
+    <title>TurnX | Turning Ideas Into Digital Success</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="is-loading">
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__ring"></div>
+      <p class="loader__label">TurnX</p>
+    </div>
+
+    <div class="cursor cursor--dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor cursor--ring" id="cursorRing" aria-hidden="true"></div>
+
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="ambient-bg__blob ambient-bg__blob--one"></div>
+      <div class="ambient-bg__blob ambient-bg__blob--two"></div>
+      <div class="ambient-bg__blob ambient-bg__blob--three"></div>
+      <div class="ambient-bg__grid"></div>
+      <div class="ambient-bg__bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+    <div class="floating-actions" aria-label="Quick actions">
+      <a
+        class="floating-btn floating-btn--whatsapp"
+        href="https://wa.me/919360766575?text=Hi%20TurnX%2C%20I%20want%20to%20grow%20my%20business%20with%20your%20digital%20marketing%20services."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path
+              d="M12 2a10 10 0 0 0-8.69 14.96L2 22l5.2-1.28A10 10 0 1 0 12 2Zm5.15 14.43c-.22.61-1.3 1.16-1.79 1.22-.46.06-1.04.08-1.68-.12a13.73 13.73 0 0 1-2.08-.77 10.2 10.2 0 0 1-3.52-3.3 4.08 4.08 0 0 1-.86-2.2c0-.92.48-1.42.66-1.61.17-.2.37-.24.5-.24h.36c.11 0 .27-.04.42.32.16.39.55 1.36.6 1.46.05.1.08.23.02.37-.06.14-.1.23-.2.35-.1.12-.2.26-.3.35-.1.1-.2.22-.08.44.12.22.54.9 1.15 1.45.8.72 1.47.95 1.68 1.05.2.1.32.08.44-.05.12-.14.5-.58.63-.78.13-.2.27-.17.45-.1.19.06 1.2.57 1.4.67.2.1.34.15.39.24.06.08.06.5-.16 1.1Z"
+            ></path>
+          </svg>
+        </span>
+      </a>
+      <button
+        class="floating-btn floating-btn--top"
+        id="scrollTopBtn"
+        type="button"
+        aria-label="Scroll to top"
+      >
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M12 5.1 4.8 12.3l1.7 1.7 4.3-4.3V19h2.4V9.7l4.3 4.3 1.7-1.7L12 5.1Z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="TurnX home">
+          Turn<span>X</span>
+        </a>
+
+        <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__cta" href="#contact">Get Started</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__layout">
+          <div class="hero__content reveal" data-reveal="up">
+            <p class="eyebrow">Established 2023 | Founder: Gokula Priya</p>
+            <h1>
+              Turning Ideas Into
+              <span class="text-gradient">Digital Success</span>
+            </h1>
+            <p>
+              TurnX helps modern brands scale with precision. We combine
+              performance marketing, SEO, creative strategy, and daily social
+              execution to build consistent lead flow, stronger visibility, and
+              measurable revenue growth.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Start Your Growth</a>
+              <a class="btn btn--ghost" href="#services">Explore Services</a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" data-reveal="scale">
+            <article class="glass stat-card stat-card--main floating-3d">
+              <h2>+340%</h2>
+              <p>Average ROAS Improvement</p>
+            </article>
+            <article class="glass stat-card stat-card--side floating-3d-delayed">
+              <h3>SEO Visibility</h3>
+              <p>Top rankings with technical + content strategy.</p>
+            </article>
+            <article class="glass stat-card stat-card--bottom floating-3d-slow">
+              <h3>Ads Engine</h3>
+              <p>Google & Meta campaigns with conversion precision.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">What We Deliver</p>
+            <h2>Premium Marketing Services</h2>
+            <p>
+              End-to-end execution designed for businesses that want both
+              premium brand perception and strong performance results.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Growth</span>
+              <h3>Digital Marketing</h3>
+              <p>
+                Omnichannel strategy, campaign execution, and reporting built
+                to accelerate measurable business growth.
+              </p>
+              <ul class="service__list">
+                <li>Monthly strategy roadmap</li>
+                <li>Channel budget planning</li>
+                <li>Performance report reviews</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Visibility</span>
+              <h3>SEO Optimization</h3>
+              <p>
+                Technical SEO, content structure, and authority building
+                designed for consistent ranking growth.
+              </p>
+              <ul class="service__list">
+                <li>Keyword cluster planning</li>
+                <li>Technical issue fixes</li>
+                <li>Content authority roadmap</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Paid Media</span>
+              <h3>Google &amp; Meta Ads</h3>
+              <p>
+                High-conversion Google and Meta campaigns optimized through
+                targeting, testing, and budget control.
+              </p>
+              <ul class="service__list">
+                <li>Campaign build scaling</li>
+                <li>Creative split testing</li>
+                <li>Lead quality optimization</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Engagement</span>
+              <h3>Social Media Management</h3>
+              <p>
+                Planned social calendars, engagement management, and
+                optimization to strengthen audience relationships daily.
+              </p>
+              <ul class="service__list">
+                <li>Platform calendar planning</li>
+                <li>Comment message handling</li>
+                <li>Weekly growth reporting</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Creative</span>
+              <h3>Daily Image &amp; Video Posting</h3>
+              <p>
+                Daily image and video publishing workflows that improve
+                consistency, recall, and engagement.
+              </p>
+              <ul class="service__list">
+                <li>Daily creative delivery</li>
+                <li>Short video editing</li>
+                <li>Brand template consistency</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Positioning</span>
+              <h3>Branding &amp; Strategy</h3>
+              <p>
+                Brand positioning, messaging, and creative direction crafted for
+                clarity, trust, and differentiation.
+              </p>
+              <ul class="service__list">
+                <li>Brand voice messaging</li>
+                <li>Visual identity direction</li>
+                <li>Market differentiation strategy</li>
+              </ul>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Scale</span>
+              <h3>Performance Marketing</h3>
+              <p>
+                Performance funnels optimized from click to conversion using
+                data-backed testing and insights.
+              </p>
+              <ul class="service__list">
+                <li>Funnel conversion tracking</li>
+                <li>Cost efficiency optimization</li>
+                <li>Retargeting audience growth</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--results" id="results">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">Why TurnX</p>
+            <h2>Aligned Process. Real Results.</h2>
+            <p>
+              We focus on clarity, execution speed, and measurable growth so
+              your brand moves forward every week.
+            </p>
+          </div>
+          <div class="results-grid">
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>01. Research & Audit</h3>
+              <p>
+                We analyze your brand, audience, competitors, and current
+                performance to identify growth gaps.
+              </p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>02. Strategy & Planning</h3>
+              <p>
+                We build a clear content and advertising roadmap with goals,
+                budgets, timelines, and KPIs.
+              </p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>03. Daily Execution</h3>
+              <p>
+                Our team runs campaigns, daily posting, testing, and
+                optimization while keeping your brand consistent.
+              </p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>04. Reporting & Scale</h3>
+              <p>
+                You get clear weekly insights and recommendations to scale what
+                works and cut waste fast.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--about" id="about">
+        <div class="container about-layout">
+          <div class="about-copy reveal" data-reveal="left">
+            <p class="eyebrow">About TurnX</p>
+            <h2>Luxury Marketing Precision For Serious Brands</h2>
+            <p>
+              Founded in 2023 by Gokula Priya, TurnX partners with ambitious
+              businesses that need both creative excellence and accountable
+              performance. We combine strategy, media, and content operations
+              into one aligned growth system that is fast, focused, and
+              measurable.
+            </p>
+            <div class="about-metrics">
+              <div class="glass metric">
+                <strong>2023</strong>
+                <span>Established</span>
+              </div>
+              <div class="glass metric">
+                <strong>7</strong>
+                <span>Core Services</span>
+              </div>
+              <div class="glass metric">
+                <strong>24/7</strong>
+                <span>Optimization Mindset</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-panel glass reveal" data-reveal="right">
+            <h3>Execution Stack</h3>
+            <ul>
+              <li>SEO + Content Growth Engines</li>
+              <li>Paid Media Scaling Systems</li>
+              <li>Social Creative Production</li>
+              <li>Daily Reporting & Performance Reviews</li>
+              <li>Funnel Improvements + Conversion Tracking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">FAQ</p>
+            <h2>Service Workflow</h2>
+          </div>
+
+          <div class="accordion" id="faqAccordion">
+            <article class="accordion-item glass reveal" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                How does TurnX start a new project?
+              </button>
+              <div class="accordion-panel">
+                <p>We begin with an audit, define KPIs, and launch a 90-day growth roadmap.</p>
+              </div>
+            </article>
+            <article class="accordion-item glass reveal" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                Do you handle both creative and performance?
+              </button>
+              <div class="accordion-panel">
+                <p>Yes. Strategy, ad management, social creative, and optimization are integrated.</p>
+              </div>
+            </article>
+            <article class="accordion-item glass reveal" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                What channels are included?
+              </button>
+              <div class="accordion-panel">
+                <p>SEO, Google Ads, Meta Ads, and social media with daily image/video posting.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contact">
+        <div class="container">
+          <div class="cta glass reveal" data-reveal="scale">
+            <p class="eyebrow">Let&apos;s Build Momentum</p>
+            <h2>Ready To Grow With TurnX?</h2>
+            <p>
+              Premium digital marketing for brands that want measurable scale.
+              Call us at
+              <a class="contact-number" href="tel:+919360766575">9360766575</a>.
+            </p>
+            <a class="btn btn--primary" href="mailto:hello@turnx.com">Book a Consultation</a>
+            <a class="btn btn--ghost" href="tel:+919360766575">Call Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>TurnX | Turning Ideas Into Digital Success</p>
+        <p>Founder: Gokula Priya</p>
+        <p>
+          Contact:
+          <a class="footer-phone" href="tel:+919360766575">+91 93607 66575</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
