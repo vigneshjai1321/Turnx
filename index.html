@@ -33,8 +33,18 @@
   </head>
   <body class="is-loading">
     <div class="loader" id="loader" aria-hidden="true">
-      <div class="loader__ring"></div>
-      <p class="loader__label">TurnX</p>
+      <div class="loader__panel">
+        <div class="loader__orb">
+          <span class="loader__ring loader__ring--outer"></span>
+          <span class="loader__ring loader__ring--inner"></span>
+          <span class="loader__core"></span>
+        </div>
+        <p class="loader__label">TurnX</p>
+        <p class="loader__sub">Scaling Your Success…</p>
+        <div class="loader__progress" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
     </div>
 
     <div class="cursor cursor--dot" id="cursorDot" aria-hidden="true"></div>
@@ -98,7 +108,9 @@
         <nav class="nav" id="primaryNav" aria-label="Primary navigation">
           <a class="nav__link" href="#home">Home</a>
           <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#industries">Industries</a>
           <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#testimonials">Testimonials</a>
           <a class="nav__link" href="#faq">FAQ</a>
           <a class="nav__cta" href="#contact">Get Started</a>
         </nav>
@@ -156,7 +168,7 @@
         </div>
       </section>
 
-      <section class="section" id="services">
+      <section class="section section--services" id="services">
         <div class="container">
           <div class="section-head reveal" data-reveal="up">
             <p class="eyebrow">What We Deliver</p>
@@ -306,11 +318,56 @@
         </div>
       </section>
 
+      <section class="section section--industries" id="industries">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">Who We Work With</p>
+            <h2>Industries We Work With</h2>
+            <p>
+              We work with local and growing businesses that want measurable marketing outcomes.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Fashion &amp; Boutiques</h3>
+              <p>Brand visibility, in-store footfall, and social-led sales growth campaigns.</p>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Clinics &amp; Hospitals</h3>
+              <p>Trust-focused ads and local search strategies to attract qualified patients.</p>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Real Estate</h3>
+              <p>Lead generation funnels for site visits, inquiries, and project conversions.</p>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Educational Institutions</h3>
+              <p>Admission campaign planning with seasonal targeting and parent-focused creatives.</p>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Local Retail Brands</h3>
+              <p>Geo-targeted promotions designed to increase walk-ins and repeat purchases.</p>
+            </article>
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Industry</span>
+              <h3>Startups &amp; E-commerce</h3>
+              <p>Performance-first growth systems that scale customer acquisition efficiently.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section section--about" id="about">
         <div class="container about-layout">
           <div class="about-copy reveal" data-reveal="left">
             <p class="eyebrow">About TurnX</p>
-            <h2>Luxury Marketing Precision For Serious Brands</h2>
+            <h2>Premium Digital Marketing For Ambitious Brands In Chennai</h2>
             <p>
               Founded in 2023 by Gokula Priya, TurnX partners with ambitious
               businesses that need both creative excellence and accountable
@@ -347,7 +404,84 @@
         </div>
       </section>
 
-      <section class="section" id="faq">
+      <section class="section section--testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">Client Voices</p>
+            <h2>What Our Clients Say</h2>
+            <p>Real outcomes from businesses we support with daily execution and growth strategy.</p>
+          </div>
+
+          <div class="results-grid">
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>⭐ Boutique Growth Story</h3>
+              <p class="testimonial-quote">
+                “TurnX helped us increase store footfall by 40% through targeted ads.”
+              </p>
+              <p class="testimonial-author">— Boutique Owner, Chennai</p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>⭐ Clinic Lead Quality</h3>
+              <p class="testimonial-quote">
+                “Our appointment inquiries improved within weeks, and lead quality became much better.”
+              </p>
+              <p class="testimonial-author">— Clinic Manager, Chennai</p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>⭐ Retail Visibility Lift</h3>
+              <p class="testimonial-quote">
+                “Their social and ad strategy gave us steady monthly growth and stronger local awareness.”
+              </p>
+              <p class="testimonial-author">— Retail Brand Owner, Chennai</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--pricing" id="pricing">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">Pricing</p>
+            <h2>Clear Monthly Plan</h2>
+            <p>Simple, transparent structure for businesses starting growth marketing.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service glass reveal" data-reveal="up">
+              <span class="service__tag">Starter Plan</span>
+              <h3>₹15,000 / month</h3>
+              <p>Ideal for local businesses that need consistent content + ad support.</p>
+              <ul class="service__list">
+                <li>Social Media Posting</li>
+                <li>Basic Ads Management</li>
+                <li>Monthly Performance Report</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--results section--case" id="case-study">
+        <div class="container">
+          <div class="section-head reveal" data-reveal="up">
+            <p class="eyebrow">Case Study</p>
+            <h2>Boutique Brand - Chennai</h2>
+            <p>A focused 60-day paid + creative strategy designed for conversion growth.</p>
+          </div>
+          <div class="results-grid">
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>3X ROAS In 60 Days</h3>
+              <p>120+ qualified leads generated through audience testing and offer refinement.</p>
+            </article>
+            <article class="result-card glass reveal" data-reveal="up">
+              <h3>38% Revenue Increase</h3>
+              <p>Improved ad efficiency and stronger conversion flow from click to purchase.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--faq" id="faq">
         <div class="container">
           <div class="section-head reveal" data-reveal="up">
             <p class="eyebrow">FAQ</p>
@@ -393,8 +527,8 @@
               Call us at
               <a class="contact-number" href="tel:+919360766575">9360766575</a>.
             </p>
-            <a class="btn btn--primary" href="mailto:hello@turnx.com">Book a Consultation</a>
-            <a class="btn btn--ghost" href="tel:+919360766575">Call Now</a>
+            <a class="btn btn--primary" href="mailto:hello@turnx.com">Get Free Marketing Audit</a>
+            <a class="btn btn--ghost" href="tel:+919360766575">Free 15-Minute Growth Strategy Call</a>
           </div>
         </div>
       </section>
