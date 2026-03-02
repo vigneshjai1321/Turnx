@@ -187,6 +187,38 @@ function setupScrollTopButton() {
   });
 }
 
+function setupClickBubbles() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  const bubbleLayer = document.createElement("div");
+  bubbleLayer.className = "click-bubble-layer";
+  bubbleLayer.setAttribute("aria-hidden", "true");
+  body.appendChild(bubbleLayer);
+
+  const skipTargets =
+    "a, button, input, textarea, select, label, summary, [role='button'], .menu-toggle, .accordion-trigger, .floating-btn, .nav";
+
+  document.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (event.pointerType === "mouse" && event.button !== 0) return;
+      if (event.target instanceof Element && event.target.closest(skipTargets)) return;
+
+      const bubble = document.createElement("span");
+      bubble.className = "click-bubble";
+      bubble.style.left = `${event.clientX}px`;
+      bubble.style.top = `${event.clientY}px`;
+      bubble.style.setProperty("--bubble-size", `${Math.floor(52 + Math.random() * 28)}px`);
+      bubbleLayer.appendChild(bubble);
+
+      bubble.addEventListener("animationend", () => bubble.remove(), { once: true });
+    },
+    { passive: true },
+  );
+}
+
 function forcePageTopOnLoad() {
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
@@ -209,3 +241,4 @@ setupRevealOnScroll();
 setupAccordion();
 setupCursor();
 setupScrollTopButton();
+setupClickBubbles();

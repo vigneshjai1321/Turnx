@@ -1389,5 +1389,49 @@ main {
   }
 }
 
+.click-bubble-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2400;
+}
+
+.click-bubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--bubble-size, 64px);
+  height: var(--bubble-size, 64px);
+  border-radius: 50%;
+  border: 2px solid rgba(228, 196, 255, 0.72);
+  background: radial-gradient(circle, rgba(221, 177, 255, 0.34) 0%, rgba(168, 85, 247, 0.16) 45%, rgba(168, 85, 247, 0) 72%);
+  box-shadow: 0 0 24px rgba(168, 85, 247, 0.34);
+  transform: translate(-50%, -50%) scale(0.25);
+  animation: clickBubble 0.82s var(--ease-out) forwards;
+}
+
+.click-bubble::after {
+  content: "";
+  position: absolute;
+  inset: -16%;
+  border-radius: 50%;
+  border: 1px solid rgba(215, 177, 255, 0.46);
+  opacity: 0.95;
+}
+
+@keyframes clickBubble {
+  0% {
+    transform: translate(-50%, -50%) scale(0.25);
+    opacity: 0.86;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.05);
+    opacity: 0;
+  }
+}
+
 
 
